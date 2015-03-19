@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func HomeView(c *gin.Context) {
+func SayHelloView(c *gin.Context) {
 	obj := c.MustGet("data").(map[string]string)
-	c.HTML(http.StatusOK, "home.html",obj)
+	c.HTML(http.StatusOK, "sayhello.html",obj)
 }
